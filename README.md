@@ -15,7 +15,7 @@ graph using the connections of the vertices. However, s-core is not restricted
 to only binary adjacency matrix like k-core algorithm (connected/not connected),
 but connectivity weights are utilized. A clear R implementation of the algorithm
 is done on *brainGraph* R package
-([Watson, 2024](#ref-brainGraph.))
+([Watson, 2024](#ref-brainGraph))
 
 An expression of the flow chart for this s-core the algorithm is shown on Fig.
 <a href="#ref-Figure1">1</a>. Note that the implementation of the scoredec package
