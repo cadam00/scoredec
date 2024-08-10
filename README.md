@@ -22,9 +22,6 @@ An expression of the flow chart for this s-core the algorithm is shown on Fig.
 is has some minor but significant differences, allowing it to be much more
 time and memory efficient.
 
-```{r Figure1, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig1.png")
-```
 <p align="center">
   <img src="fig1.png", width="50%" />
 </p>
