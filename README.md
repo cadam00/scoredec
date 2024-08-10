@@ -11,8 +11,8 @@ remotes::install_github("cadam00/scoredec")
 
 s-core algorithm ([Eidsaa and Almaas, 2013](#ref-eidsaa2013s)) is a variation of
 the traditional s-core algorithm. In particular, it is used for decomposing
-graph using the connections of the vertices. However, S-core is not restricted
-to only binary adjacency matrix like K-core algorithm (connected/not connected),
+graph using the connections of the vertices. However, s-core is not restricted
+to only binary adjacency matrix like k-core algorithm (connected/not connected),
 but connectivity weights are utilized. A clear R implementation of the algorithm
 is implemented on *brainGraph* R package
 ([Watson, 2024](#ref-brainGraph.))
