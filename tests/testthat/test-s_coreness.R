@@ -6,14 +6,14 @@ test_that("s_coreness g and W work", {
   W[lower.tri(W)] <- t(W)[lower.tri(W)]
   diag(W) <- 0
   
-  expect_equal(scoreR::s_coreness(g = NULL, W = W, mode = "all"),
+  expect_equal(scoredec::s_coreness(g = NULL, W = W, mode = "all"),
                c(3, 1, 2, 4, 4))
   
   # Create a dummy undirected graph
   g <- igraph::graph_from_adjacency_matrix(adjmatrix = W,
                                            mode      = "undirected",
                                            weighted  = TRUE)
-  expect_equal(scoreR::s_coreness(g = g, W = NULL, mode = "all"),
+  expect_equal(scoredec::s_coreness(g = g, W = NULL, mode = "all"),
                c(3, 1, 2, 4, 4))
   
   # Create a dummy undirected graph
@@ -27,15 +27,28 @@ test_that("s_coreness g and W work", {
                                            mode      = "undirected",
                                            weighted  = FALSE)
   
-  expect_equal(scoreR::s_coreness(g = g),
+  expect_equal(scoredec::s_coreness(g = g),
                igraph::coreness(g = g))
+
+  # Test symadj
+  set.seed(123)
+  n <- 5
+  W <- matrix(runif(n^2),n)
+  W[lower.tri(W)] <- t(W)[lower.tri(W)]
+  
+  g <- igraph::graph_from_adjacency_matrix(adjmatrix = W,
+                                           mode      = "undirected",
+                                           weighted  = TRUE)
+  
+  expect_equal(scoredec::s_coreness(g = g),
+               c(3, 1, 5, 2, 4))
   
   # Test input mistake
-  score <- try(scoreR::s_coreness(g = W), silent = TRUE)
+  score <- try(scoredec::s_coreness(g = W), silent = TRUE)
   
   expect_true(class(score) == "try-error")
   
-  score <- try(scoreR::s_coreness(g = g, W = W), silent = TRUE)
+  score <- try(scoredec::s_coreness(g = g, W = W), silent = TRUE)
   
   expect_true(class(score) == "try-error")
   
@@ -50,17 +63,17 @@ test_that("s_coreness mode works", {
   W[lower.tri(W)] <- t(W)[lower.tri(W)]
   diag(W) <- 0
   
-  expect_equal(scoreR::s_coreness(g = NULL, W = W, mode = "all"),
+  expect_equal(scoredec::s_coreness(g = NULL, W = W, mode = "all"),
                c(3, 1, 2, 4, 4))
   
-  expect_equal(scoreR::s_coreness(g = NULL, W = W, mode = "in"),
+  expect_equal(scoredec::s_coreness(g = NULL, W = W, mode = "in"),
                c(3, 1, 2, 4, 4))
   
-  expect_equal(scoreR::s_coreness(g = NULL, W = W, mode = "out"),
+  expect_equal(scoredec::s_coreness(g = NULL, W = W, mode = "out"),
                c(3, 1, 2, 4, 4))
   
   # Test input mistake
-  score <- try(scoreR::s_coreness(g = NULL, W = W, mode = "blabla"),
+  score <- try(scoredec::s_coreness(g = NULL, W = W, mode = "blabla"),
                silent = TRUE)
   
   expect_true(class(score) == "try-error")

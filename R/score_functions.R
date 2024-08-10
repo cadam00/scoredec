@@ -17,9 +17,9 @@ s_coreness <- function(g = NULL, W = NULL, mode = "all") {
     if (!is_weighted(g)) return(coreness(g, mode = mode))
     # W <- as_adj(g, names=FALSE, sparse=FALSE, attr='weight')
     n <- vcount(g)
-    if (!is_directed(g) && (length(E(g)) == (n * (n - 1) / 2 + n)) ){
+    if (!is_directed(g) && (length(E(g)) == ((n * (n - 1) / 2) + n)) ){
       ## Fast adjacency matrix for full connected undirected graph
-      W <- symadj(E(g)$weight, vcount(g))
+      W <- symadj(E(g)$weight, n)
     } else {
       W <- as_adj(g, names=FALSE, sparse=FALSE, attr='weight')
     }

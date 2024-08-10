@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(scoreR)
+library(scoredec)
 
-test_check("scoreR")
+test_check("scoredec")

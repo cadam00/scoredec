@@ -1,6 +1,5 @@
 \name{s_coreness}
 \alias{s_coreness}
-\docType{package}
 \title{
 s-core community decomposition
 }
@@ -53,12 +52,12 @@ W <- matrix(runif(n^2),n)
 W[lower.tri(W)] = t(W)[lower.tri(W)]
 diag(W) <- 0
 
-print(scoreR::s_coreness(g = NULL, W = W, mode = "all"))
+print(scoredec::s_coreness(g = NULL, W = W, mode = "all"))
 
 
 # Create a dummy undirected graph
 g <- igraph::graph_from_adjacency_matrix(adjmatrix = W,
                                          mode      = "undirected",
                                          weighted  = TRUE)
-print(scoreR::s_coreness(g = g, W = NULL, mode = "all"))
+print(scoredec::s_coreness(g = g, W = NULL, mode = "all"))
 }

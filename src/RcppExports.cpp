@@ -12,7 +12,7 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 
 // symadj
 NumericMatrix symadj(NumericVector Eg, size_t n);
-RcppExport SEXP _scoreR_symadj(SEXP EgSEXP, SEXP nSEXP) {
+RcppExport SEXP _scoredec_symadj(SEXP EgSEXP, SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -24,7 +24,7 @@ END_RCPP
 }
 // sum_W_Wt
 void sum_W_Wt(NumericMatrix W);
-RcppExport SEXP _scoreR_sum_W_Wt(SEXP WSEXP) {
+RcppExport SEXP _scoredec_sum_W_Wt(SEXP WSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericMatrix >::type W(WSEXP);
@@ -34,7 +34,7 @@ END_RCPP
 }
 // score_out
 IntegerVector score_out(NumericMatrix W, NumericVector str_tmp);
-RcppExport SEXP _scoreR_score_out(SEXP WSEXP, SEXP str_tmpSEXP) {
+RcppExport SEXP _scoredec_score_out(SEXP WSEXP, SEXP str_tmpSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -46,7 +46,7 @@ END_RCPP
 }
 // score_in
 IntegerVector score_in(NumericMatrix W, NumericVector str_tmp);
-RcppExport SEXP _scoreR_score_in(SEXP WSEXP, SEXP str_tmpSEXP) {
+RcppExport SEXP _scoredec_score_in(SEXP WSEXP, SEXP str_tmpSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -58,14 +58,14 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_scoreR_symadj", (DL_FUNC) &_scoreR_symadj, 2},
-    {"_scoreR_sum_W_Wt", (DL_FUNC) &_scoreR_sum_W_Wt, 1},
-    {"_scoreR_score_out", (DL_FUNC) &_scoreR_score_out, 2},
-    {"_scoreR_score_in", (DL_FUNC) &_scoreR_score_in, 2},
+    {"_scoredec_symadj", (DL_FUNC) &_scoredec_symadj, 2},
+    {"_scoredec_sum_W_Wt", (DL_FUNC) &_scoredec_sum_W_Wt, 1},
+    {"_scoredec_score_out", (DL_FUNC) &_scoredec_score_out, 2},
+    {"_scoredec_score_in", (DL_FUNC) &_scoredec_score_in, 2},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_scoreR(DllInfo *dll) {
+RcppExport void R_init_scoredec(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

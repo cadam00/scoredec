@@ -1,10 +1,10 @@
 ## **Installation**
 
-You can install the development version of **scoreR** like so:
+You can install the development version of **scoredec** like so:
 
 ``` r
 if (!require(remotes)) install.packages("remotes")
-remotes::install_github("cadam00/scoreR")
+remotes::install_github("cadam00/scoredec")
 ```
 
 # **S-core algorithm**
@@ -18,7 +18,7 @@ is implemented on *brainGraph* R package
 ([Watson, 2024](#ref-brainGraph.))
 
 An expression of the flow chart for this s-core the algorithm is shown on Fig.
-<a href="#ref-Figure1">1</a>. Note that the implementation of the scoreR package
+<a href="#ref-Figure1">1</a>. Note that the implementation of the scoredec package
 is has some minor but significant differences, allowing it to be much more
 time and memory efficient.
 
@@ -36,7 +36,7 @@ knitr::include_graphics("fig1.png")
 
 ```r
 # Import libraries
-library(scoreR)
+library(scoredec)
 library(igraph)
 
 # Create a dummy undirected graph

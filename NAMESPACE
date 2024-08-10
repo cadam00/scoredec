@@ -1,4 +1,4 @@
-useDynLib(scoreR, .registration=TRUE)
+useDynLib(scoredec, .registration=TRUE)
 importFrom(Rcpp, evalCpp)
 importFrom(Rfast, "rowsums", "colsums")
 importFrom(igraph, "is_igraph", "coreness", "as_adj", "is_weighted", "vcount",

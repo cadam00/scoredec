@@ -1,4 +1,4 @@
-# scoreR 0.1.0
+# scoredec 0.1.0
 
 ## Major changes
 
