@@ -1,12 +1,12 @@
 Package: scoredec
 Type: Package
-Title: S-Core Community Decomposition
+Title: S-Core Graph Decomposition
 Version: 1.0
 Authors@R: c(person("Christos", "Adam", role = c("aut", "cre"),
            email = "econp266@econ.soc.uoc.gr"))
 Maintainer: Christos Adam <econp266@econ.soc.uoc.gr>
-Description: S-Core Community Decomposition algorithm for graphs. This is a
-             method  for decomposition of a weighted graph, as proposed by
+Description: S-Core Graph Decomposition algorithm for graphs. This is a
+             method for decomposition of a weighted graph, as proposed by
              Eidsaa and Almaas (2013) <doi:10.1103/PhysRevE.88.062819>. The high
              speed and the low memory usage make it suitable for large graphs.
 License: GPL (>= 2)
