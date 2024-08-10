@@ -1,0 +1,25 @@
+Package: scoreR
+Type: Package
+Title: S-Core Community Decomposition
+Version: 1.0
+Authors@R: c(person("Christos", "Adam", role = c("aut", "cre"),
+           email = "econp266@econ.soc.uoc.gr"))
+Author: Christos Adam
+Maintainer: Christos Adam <econp266@econ.soc.uoc.gr>
+Description: S-Core Community Decomposition algorithm for graphs. This is a method
+             for decomposition of a weighted graph, as proposed by Eidsaa and
+             Almaas (2013) <doi:10.1103/PhysRevE.88.062819>. The high speed and
+             the low memory usage make it suitable for large graphs.
+License: GPL (>= 2)
+LinkingTo: Rcpp
+Encoding: UTF-8
+URL: https://github.com/cadam00/priorCON
+BugReports: https://github.com/cadam00/priorCON/issues
+Imports: Rcpp (>= 1.0.12), Rfast, igraph
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr, rmarkdown

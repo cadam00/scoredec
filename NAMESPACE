@@ -1,0 +1,6 @@
+useDynLib(scoreR, .registration=TRUE)
+importFrom(Rcpp, evalCpp)
+importFrom(Rfast, "rowsums", "colsums")
+importFrom(igraph, "is_igraph", "coreness", "as_adj", "is_weighted", "vcount",
+           "is_directed", "E")
+exportPattern("s_coreness")
