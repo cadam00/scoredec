@@ -34,7 +34,7 @@ IntegerVector score_out(NumericMatrix W, NumericVector str_tmp) {
   size_t n = str_tmp.length(), prevstart = 0;
   int ct = 1;
   double s_thr = 0;
-  bool anynonzero;
+  bool anynonzero = false;
   std::vector<bool> tokeep(n);
   IntegerVector s_core(n);
   
@@ -107,7 +107,7 @@ IntegerVector score_in(NumericMatrix W, NumericVector str_tmp) {
   size_t n = str_tmp.length(), prevstart = 0;
   int ct = 1;
   double s_thr = 0;
-  bool anynonzero;
+  bool anynonzero = false;
   std::vector<bool> tokeep(n);
   IntegerVector s_core(n);
   
