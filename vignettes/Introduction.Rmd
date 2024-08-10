@@ -22,7 +22,7 @@ vignette: >
 knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 ```
 
-# **S-core algorithm**
+# **s-core algorithm**
 
 s-core algorithm ([Eidsaa and Almaas, 2013](#ref-eidsaa2013s)) is a variation of
 the traditional s-core algorithm. In particular, it is used for decomposing

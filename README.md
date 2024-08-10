@@ -7,7 +7,7 @@ if (!require(remotes)) install.packages("remotes")
 remotes::install_github("cadam00/scoredec")
 ```
 
-# **S-core algorithm**
+# **s-core algorithm**
 
 s-core algorithm ([Eidsaa and Almaas, 2013](#ref-eidsaa2013s)) is a variation of
 the traditional s-core algorithm. In particular, it is used for decomposing
