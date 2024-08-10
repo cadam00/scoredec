@@ -1,6 +1,6 @@
 test_that("s_coreness g and W work", {
   # Create a dummy symmetric adjacency matrix
-  set.seed(123)
+  set.seed(123, "Mersenne-Twister", sample.kind="Rejection")
   n <- 5
   W <- matrix(runif(n^2),n)
   W[lower.tri(W)] <- t(W)[lower.tri(W)]
@@ -17,7 +17,7 @@ test_that("s_coreness g and W work", {
                c(3, 1, 2, 4, 4))
   
   # Create a dummy undirected graph
-  set.seed(123)
+  set.seed(123, "Mersenne-Twister", sample.kind="Rejection")
   n <- 5
   W <- matrix(sample(c(0,1),n^2,replace=TRUE),n)
   W[lower.tri(W)] <- t(W)[lower.tri(W)]
@@ -31,7 +31,7 @@ test_that("s_coreness g and W work", {
                igraph::coreness(g = g))
 
   # Test symadj
-  set.seed(123)
+  set.seed(123, "Mersenne-Twister", sample.kind="Rejection")
   n <- 5
   W <- matrix(runif(n^2),n)
   W[lower.tri(W)] <- t(W)[lower.tri(W)]
@@ -57,7 +57,7 @@ test_that("s_coreness g and W work", {
 test_that("s_coreness mode works", {
   
   # Create a dummy symmetric adjacency matrix
-  set.seed(123)
+  set.seed(123, "Mersenne-Twister", sample.kind="Rejection")
   n <- 5
   W <- matrix(runif(n^2),n)
   W[lower.tri(W)] <- t(W)[lower.tri(W)]
