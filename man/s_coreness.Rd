@@ -32,6 +32,12 @@ While the source code is not as clear as the one at \code{brainGraph::s_core},
 it is very speed and memory efficient. In case that the adjacency matrix
 \code{W} is provided instead of the graph \code{g} is provided, then this
 function is very speed and memory efficient.
+
+Note that in cases that the adjacency matrix \code{W} is known to be symmetric
+(checked, for example, with \code{base::isSymmetric} or
+\code{Rfast::is.symmetric}), then \code{mode = "in"} and \code{mode = "out"}
+will produce the same result more efficiently. For efficiency reasons not
+checking it is chosen, but user should do it.
 }
 
 \references{
@@ -53,11 +59,19 @@ W[lower.tri(W)] = t(W)[lower.tri(W)]
 diag(W) <- 0
 
 print(scoredec::s_coreness(g = NULL, W = W, mode = "all"))
+## [1] 3 1 2 4 4
 
+base::isSymmetric(W)
+## [1] TRUE
+
+all.equal(scoredec::s_coreness(g = NULL, W = W, mode = "all"),
+scoredec::s_coreness(g = NULL, W = W, mode = "in"))
+## [1] TRUE
 
 # Create a dummy undirected graph
 g <- igraph::graph_from_adjacency_matrix(adjmatrix = W,
                                          mode      = "undirected",
                                          weighted  = TRUE)
 print(scoredec::s_coreness(g = g, W = NULL, mode = "all"))
+## [1] 3 1 2 4 4
 }
