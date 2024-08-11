@@ -18,9 +18,9 @@ is done on **brainGraph** R package
 ([Watson, 2024](#ref-brainGraph))
 
 An expression of the flow chart for this s-core the algorithm is shown on Fig.
-<a href="#ref-Figure1">1</a>. Note that the implementation of the scoredec package
-is has some minor but significant differences, allowing it to be much more
-time and memory efficient.
+<a href="#ref-Figure1">1</a>. Note that the implementation of the **scoredec**
+package is has some minor but significant differences, allowing it to be much
+more time and memory efficient.
 
 <p align="center">
   <img src="fig1.png", width="50%" />
