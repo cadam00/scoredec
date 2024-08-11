@@ -22,14 +22,25 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// sum_W_Wt
-void sum_W_Wt(NumericMatrix W);
-RcppExport SEXP _scoredec_sum_W_Wt(SEXP WSEXP) {
+// sum_W_Wt_graph
+void sum_W_Wt_graph(NumericMatrix W);
+RcppExport SEXP _scoredec_sum_W_Wt_graph(SEXP WSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericMatrix >::type W(WSEXP);
-    sum_W_Wt(W);
+    sum_W_Wt_graph(W);
     return R_NilValue;
+END_RCPP
+}
+// sum_W_Wt
+NumericMatrix sum_W_Wt(NumericMatrix W);
+RcppExport SEXP _scoredec_sum_W_Wt(SEXP WSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type W(WSEXP);
+    rcpp_result_gen = Rcpp::wrap(sum_W_Wt(W));
+    return rcpp_result_gen;
 END_RCPP
 }
 // score_out
@@ -68,14 +79,25 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// sum_W_Wt_int
-void sum_W_Wt_int(IntegerMatrix W);
-RcppExport SEXP _scoredec_sum_W_Wt_int(SEXP WSEXP) {
+// sum_W_Wt_graph_int
+void sum_W_Wt_graph_int(IntegerMatrix W);
+RcppExport SEXP _scoredec_sum_W_Wt_graph_int(SEXP WSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< IntegerMatrix >::type W(WSEXP);
-    sum_W_Wt_int(W);
+    sum_W_Wt_graph_int(W);
     return R_NilValue;
+END_RCPP
+}
+// sum_W_Wt_int
+IntegerMatrix sum_W_Wt_int(IntegerMatrix W);
+RcppExport SEXP _scoredec_sum_W_Wt_int(SEXP WSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< IntegerMatrix >::type W(WSEXP);
+    rcpp_result_gen = Rcpp::wrap(sum_W_Wt_int(W));
+    return rcpp_result_gen;
 END_RCPP
 }
 // score_out_int
@@ -105,10 +127,12 @@ END_RCPP
 
 static const R_CallMethodDef CallEntries[] = {
     {"_scoredec_symadj", (DL_FUNC) &_scoredec_symadj, 2},
+    {"_scoredec_sum_W_Wt_graph", (DL_FUNC) &_scoredec_sum_W_Wt_graph, 1},
     {"_scoredec_sum_W_Wt", (DL_FUNC) &_scoredec_sum_W_Wt, 1},
     {"_scoredec_score_out", (DL_FUNC) &_scoredec_score_out, 2},
     {"_scoredec_score_in", (DL_FUNC) &_scoredec_score_in, 2},
     {"_scoredec_symadj_int", (DL_FUNC) &_scoredec_symadj_int, 2},
+    {"_scoredec_sum_W_Wt_graph_int", (DL_FUNC) &_scoredec_sum_W_Wt_graph_int, 1},
     {"_scoredec_sum_W_Wt_int", (DL_FUNC) &_scoredec_sum_W_Wt_int, 1},
     {"_scoredec_score_out_int", (DL_FUNC) &_scoredec_score_out_int, 2},
     {"_scoredec_score_in_int", (DL_FUNC) &_scoredec_score_in_int, 2},

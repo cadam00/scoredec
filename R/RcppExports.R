@@ -5,8 +5,12 @@ symadj <- function(Eg, n) {
     .Call(`_scoredec_symadj`, Eg, n)
 }
 
+sum_W_Wt_graph <- function(W) {
+    invisible(.Call(`_scoredec_sum_W_Wt_graph`, W))
+}
+
 sum_W_Wt <- function(W) {
-    invisible(.Call(`_scoredec_sum_W_Wt`, W))
+    .Call(`_scoredec_sum_W_Wt`, W)
 }
 
 score_out <- function(W, str_tmp) {
@@ -21,8 +25,12 @@ symadj_int <- function(Eg, n) {
     .Call(`_scoredec_symadj_int`, Eg, n)
 }
 
+sum_W_Wt_graph_int <- function(W) {
+    invisible(.Call(`_scoredec_sum_W_Wt_graph_int`, W))
+}
+
 sum_W_Wt_int <- function(W) {
-    invisible(.Call(`_scoredec_sum_W_Wt_int`, W))
+    .Call(`_scoredec_sum_W_Wt_int`, W)
 }
 
 score_out_int <- function(W, str_tmp) {

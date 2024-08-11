@@ -7,7 +7,11 @@ s_coreness <- function(g = NULL, W = NULL, mode = "all") {
   if (is_null_g & is_null_W ||(!is_null_g & !is_null_W))
     stop("Provide one of g or W.")
   
-  if(!is_null_g) stopifnot(is_igraph(g))
+  if(is_null_g) {
+    stopifnot(is.matrix(W))
+  } else {
+    stopifnot(is_igraph(g))
+  }
   
   if (!((mode == "all") || (mode == "in") || (mode == "out"))){
     stop("'mode' input must be one of 'all', 'in' or 'out'.")
@@ -31,10 +35,18 @@ s_coreness <- function(g = NULL, W = NULL, mode = "all") {
   }
   
   if (mode == "all"){
-    if (is.double(W)){
-      sum_W_Wt(W)
+    if (is_null_W){
+      if (is.double(W)){
+        sum_W_Wt_graph(W)
+      } else {
+        sum_W_Wt_graph_int(W)
+      }
     } else {
-      sum_W_Wt_int(W)
+      if (is.double(W)){
+        sum_W_Wt(W)
+      } else {
+        sum_W_Wt_int(W)
+      }
     }
   }
   

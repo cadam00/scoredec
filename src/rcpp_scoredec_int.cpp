@@ -15,7 +15,7 @@ IntegerMatrix symadj_int(IntegerVector Eg, size_t n) {
 }
 
 // [[Rcpp::export]]
-void sum_W_Wt_int(IntegerMatrix W) {
+void sum_W_Wt_graph_int(IntegerMatrix W) {
   size_t n = W.nrow(), ind1, ind2;
   for(size_t i = 0; i < n; i++) {
     for (size_t j = 0; j <= i; j++){
@@ -25,6 +25,19 @@ void sum_W_Wt_int(IntegerMatrix W) {
     }
   }
   //return W;
+}
+
+// [[Rcpp::export]]
+IntegerMatrix sum_W_Wt_int(IntegerMatrix W) {
+  size_t n = W.nrow(), ind1, ind2;
+  for(size_t i = 0; i < n; i++) {
+    for (size_t j = 0; j <= i; j++){
+      ind1 = i * n + j;
+      ind2 = j * n + i;
+      W[ind1] = W[ind2] = W[ind1] + W[ind2];
+    }
+  }
+  return W;
 }
 
 // [[Rcpp::export]]
