@@ -56,12 +56,62 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// symadj_int
+IntegerMatrix symadj_int(IntegerVector Eg, size_t n);
+RcppExport SEXP _scoredec_symadj_int(SEXP EgSEXP, SEXP nSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< IntegerVector >::type Eg(EgSEXP);
+    Rcpp::traits::input_parameter< size_t >::type n(nSEXP);
+    rcpp_result_gen = Rcpp::wrap(symadj_int(Eg, n));
+    return rcpp_result_gen;
+END_RCPP
+}
+// sum_W_Wt_int
+void sum_W_Wt_int(IntegerMatrix W);
+RcppExport SEXP _scoredec_sum_W_Wt_int(SEXP WSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< IntegerMatrix >::type W(WSEXP);
+    sum_W_Wt_int(W);
+    return R_NilValue;
+END_RCPP
+}
+// score_out_int
+IntegerVector score_out_int(IntegerMatrix W, IntegerVector str_tmp);
+RcppExport SEXP _scoredec_score_out_int(SEXP WSEXP, SEXP str_tmpSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< IntegerMatrix >::type W(WSEXP);
+    Rcpp::traits::input_parameter< IntegerVector >::type str_tmp(str_tmpSEXP);
+    rcpp_result_gen = Rcpp::wrap(score_out_int(W, str_tmp));
+    return rcpp_result_gen;
+END_RCPP
+}
+// score_in_int
+IntegerVector score_in_int(IntegerMatrix W, IntegerVector str_tmp);
+RcppExport SEXP _scoredec_score_in_int(SEXP WSEXP, SEXP str_tmpSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< IntegerMatrix >::type W(WSEXP);
+    Rcpp::traits::input_parameter< IntegerVector >::type str_tmp(str_tmpSEXP);
+    rcpp_result_gen = Rcpp::wrap(score_in_int(W, str_tmp));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_scoredec_symadj", (DL_FUNC) &_scoredec_symadj, 2},
     {"_scoredec_sum_W_Wt", (DL_FUNC) &_scoredec_sum_W_Wt, 1},
     {"_scoredec_score_out", (DL_FUNC) &_scoredec_score_out, 2},
     {"_scoredec_score_in", (DL_FUNC) &_scoredec_score_in, 2},
+    {"_scoredec_symadj_int", (DL_FUNC) &_scoredec_symadj_int, 2},
+    {"_scoredec_sum_W_Wt_int", (DL_FUNC) &_scoredec_sum_W_Wt_int, 1},
+    {"_scoredec_score_out_int", (DL_FUNC) &_scoredec_score_out_int, 2},
+    {"_scoredec_score_in_int", (DL_FUNC) &_scoredec_score_in_int, 2},
     {NULL, NULL, 0}
 };
 

@@ -17,3 +17,19 @@ score_in <- function(W, str_tmp) {
     .Call(`_scoredec_score_in`, W, str_tmp)
 }
 
+symadj_int <- function(Eg, n) {
+    .Call(`_scoredec_symadj_int`, Eg, n)
+}
+
+sum_W_Wt_int <- function(W) {
+    invisible(.Call(`_scoredec_sum_W_Wt_int`, W))
+}
+
+score_out_int <- function(W, str_tmp) {
+    .Call(`_scoredec_score_out_int`, W, str_tmp)
+}
+
+score_in_int <- function(W, str_tmp) {
+    .Call(`_scoredec_score_in_int`, W, str_tmp)
+}
+

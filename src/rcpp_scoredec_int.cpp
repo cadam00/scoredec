@@ -2,9 +2,9 @@
 using namespace Rcpp;
 
 // [[Rcpp::export]]
-NumericMatrix symadj(NumericVector Eg, size_t n) {
+IntegerMatrix symadj_int(IntegerVector Eg, size_t n) {
   size_t k = 0;
-  NumericMatrix W(n,n);
+  IntegerMatrix W(n,n);
   for(size_t i = 0; i < n; i++) {
     for(size_t j = i; j < n; j++) {
       W[i + j * n] = W[j + i * n] = Eg[k];
@@ -15,7 +15,7 @@ NumericMatrix symadj(NumericVector Eg, size_t n) {
 }
 
 // [[Rcpp::export]]
-void sum_W_Wt(NumericMatrix W) {
+void sum_W_Wt_int(IntegerMatrix W) {
   size_t n = W.nrow(), ind1, ind2;
   for(size_t i = 0; i < n; i++) {
     for (size_t j = 0; j <= i; j++){
@@ -28,7 +28,7 @@ void sum_W_Wt(NumericMatrix W) {
 }
 
 // [[Rcpp::export]]
-IntegerVector score_out(NumericMatrix W, NumericVector str_tmp) {
+IntegerVector score_out_int(IntegerMatrix W, IntegerVector str_tmp) {
   
   size_t n = str_tmp.length(), prevstart = 0;
   int ct = 1;
@@ -101,7 +101,7 @@ IntegerVector score_out(NumericMatrix W, NumericVector str_tmp) {
 
 
 // [[Rcpp::export]]
-IntegerVector score_in(NumericMatrix W, NumericVector str_tmp) {
+IntegerVector score_in_int(IntegerMatrix W, IntegerVector str_tmp) {
   
   size_t n = str_tmp.length(), prevstart = 0;
   int ct = 1;

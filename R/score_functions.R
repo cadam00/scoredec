@@ -19,20 +19,37 @@ s_coreness <- function(g = NULL, W = NULL, mode = "all") {
     n <- vcount(g)
     if (!is_directed(g) && (length(E(g)) == ((n * (n - 1) / 2) + n)) ){
       ## Fast adjacency matrix for full connected undirected graph
-      W <- symadj(E(g)$weight, n)
+      if (is.double(E(g)$weight)){
+        W <- symadj(E(g)$weight, n)
+      } else {
+        W <- symadj_int(E(g)$weight, n)
+      }
+      
     } else {
       W <- as_adj(g, names=FALSE, sparse=FALSE, attr='weight')
     }
   }
   
   if (mode == "all"){
-    sum_W_Wt(W)
+    if (is.double(W)){
+      sum_W_Wt(W)
+    } else {
+      sum_W_Wt_int(W)
+    }
   }
   
-  if (mode == "out"){
-    return(score_out(W, rowsums(W)))
+  if (is.double(W)){
+    if (mode == "out"){
+      return(score_out(W, rowsums(W)))
+    } else {
+      return(score_in(W, colsums(W)))
+    }
   } else {
-    return(score_in(W, colsums(W)))
+    if (mode == "out"){
+      return(score_out_int(W, rowsums(W)))
+    } else {
+      return(score_in_int(W, colsums(W)))
+    }
   }
   
 }
