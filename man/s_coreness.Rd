@@ -40,6 +40,10 @@ will produce the same result more efficiently. For efficiency reasons not
 checking it is chosen, but user should do it.
 }
 
+\value{
+Integer vector with s-coreness attribute to each vertex.
+}
+
 \references{
 Eidsaa, M. and Almaas, E. (2013) ‘s-core network decomposition: A generalization
 of k-core analysis to weighted networks’, \emph{Phys. Rev. E.}, American
