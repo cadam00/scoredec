@@ -2,7 +2,7 @@
 using namespace Rcpp;
 
 // [[Rcpp::export]]
-IntegerMatrix symadj_int(const IntegerVector Eg, const size_t n) {
+IntegerMatrix symadj_int(IntegerVector Eg, size_t n) {
   size_t k = 0;
   IntegerMatrix W(n,n);
   for(size_t i = 0; i < n; i++) {
@@ -41,7 +41,7 @@ IntegerMatrix sum_W_Wt_int(IntegerMatrix W) {
 }
 
 // [[Rcpp::export]]
-IntegerVector score_out_int(const IntegerMatrix W, IntegerVector str_tmp) {
+IntegerVector score_out_int(IntegerMatrix W, IntegerVector str_tmp) {
   
   size_t n = str_tmp.length(), prevstart = 0;
   int ct = 1;
@@ -114,7 +114,7 @@ IntegerVector score_out_int(const IntegerMatrix W, IntegerVector str_tmp) {
 
 
 // [[Rcpp::export]]
-IntegerVector score_in_int(const IntegerMatrix W, IntegerVector str_tmp) {
+IntegerVector score_in_int(IntegerMatrix W, IntegerVector str_tmp) {
   
   size_t n = str_tmp.length(), prevstart = 0;
   int ct = 1;
