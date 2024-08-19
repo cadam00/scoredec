@@ -60,19 +60,12 @@ IntegerVector score_out_int(IntegerMatrix W, IntegerVector str_tmp) {
     if(tokeep[i]){
       anynonzero = true;
       s_thr = str_tmp[i];
+      prevstart = i + 1;
       break;
     }
   }
   
   while (anynonzero) {
-    
-    for(size_t i = 0; i < n; i++) {
-      if(tokeep[i]){
-        s_thr = str_tmp[i];
-        prevstart = i + 1;
-        break;
-      }
-    }
     
     for(size_t i = prevstart; i < n; i++) {
       if ((str_tmp[i] < s_thr) && tokeep[i]){
@@ -105,6 +98,8 @@ IntegerVector score_out_int(IntegerMatrix W, IntegerVector str_tmp) {
     for(size_t i = 0; i < n; i++) {
       if(tokeep[i]){
         anynonzero = true;
+        s_thr = str_tmp[i];
+        prevstart = i + 1;
         break;
       }
     }
@@ -143,19 +138,12 @@ IntegerVector score_in_int(IntegerMatrix W, IntegerVector str_tmp) {
     if(tokeep[i]){
       anynonzero = true;
       s_thr = str_tmp[i];
+      prevstart = i + 1;
       break;
     }
   }
   
   while (anynonzero) {
-    
-    for(size_t i = 0; i < n; i++) {
-      if(tokeep[i]){
-        s_thr = str_tmp[i];
-        prevstart = i + 1;
-        break;
-      }
-    }
     
     for(size_t i = prevstart; i < n; i++) {
       if ((str_tmp[i] < s_thr) && tokeep[i]){
@@ -188,6 +176,8 @@ IntegerVector score_in_int(IntegerMatrix W, IntegerVector str_tmp) {
     for(size_t i = 0; i < n; i++) {
       if(tokeep[i]){
         anynonzero = true;
+        s_thr = str_tmp[i];
+        prevstart = i + 1;
         break;
       }
     }
