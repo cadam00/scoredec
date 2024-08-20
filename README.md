@@ -68,10 +68,13 @@ graph visually might get hard, especially on larger networks.
 # Get s-core values
 s_core_result <- s_coreness(g)
 print(s_core_result)
+```
+```
 ## [1] 3 1 2 3
 ```
 
 ```r
+# Plot result from s_coreness
 # Set seed for reproducible plot
 set.seed(42)
 
