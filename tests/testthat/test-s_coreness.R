@@ -113,6 +113,10 @@ test_that("s_coreness g and W work integer", {
   
   expect_true(class(score) == "try-error")
   
+  score <- try(scoredec::s_coreness(W = W[1:2, 1:5]), silent = TRUE)
+  
+  expect_true(class(score) == "try-error")
+  
 })
 
 test_that("s_coreness mode works double", {

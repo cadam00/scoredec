@@ -6,9 +6,10 @@ s_coreness <- function(g = NULL, W = NULL, mode = "all") {
   
   if (is_null_g & is_null_W ||(!is_null_g & !is_null_W))
     stop("Provide one of g or W.")
-  
   if(is_null_g) {
     stopifnot(is.matrix(W))
+    dims <- dim(W)
+    stopifnot(dims[1L] == dims[2L])
   } else {
     stopifnot(is_igraph(g))
   }
