@@ -23,7 +23,7 @@ package is has some minor but significant differences, allowing it to be much
 more time and memory efficient.
 
 <p align="center">
-  <img src="fig1.png", width="50%" />
+  <img src="man/figures/fig1.png", width="50%" />
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure1"></span>Fig. 1: s-core algorithm flowchart
@@ -52,7 +52,7 @@ plot(g,
 ```
 
 <p align="center">
-  <img src="fig2.png", width="50%" />
+  <img src="man/figures/fig2.png", width="50%" />
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure2"></span>Fig. 2: Example graph with connectivity lines
@@ -81,7 +81,7 @@ plot(g,
      )
 ```
 <p align="center">
-  <img src="fig3.png", width="50%" />
+  <img src="man/figures/fig3.png", width="50%" />
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure3"></span>Fig. 3: Example graph with vertices sized by their
