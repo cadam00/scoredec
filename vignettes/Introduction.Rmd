@@ -110,9 +110,10 @@ higher coreness compared to all the other vertices, while vertex 2 has the
 smallest one.
 
 ## **References**
-Eidsaa, M. and Almaas, E. (2013) ‘<span class="nocase" id="ref-eidsaa2013s">
-s-core network decomposition: A generalization of k-core analysis to weighted
-networks</span>’, <em>Phys. Rev. E.</em>, American Physical Society, <b>88</b>, 062819.
+Eidsaa, M. and Almaas, E. (2013) <span class="nocase" id="ref-eidsaa2013s">
+‘s-core network decomposition: A generalization of k-core analysis to weighted
+networks’</span>, <em>Phys. Rev. E.</em>, American Physical Society, <b>88</b>,
+062819.
 [https://doi.org/10.1103/PhysRevE.88.062819](https://doi.org/10.1103/PhysRevE.88.062819).
 
 Watson, C.G. (2024). *<span class="nocase" id="ref-brainGraph">brainGraph: Graph
