@@ -7,3 +7,4 @@
 ^Meta$
 ^revdep$
 ^\.github$
+^codecov\.yml$

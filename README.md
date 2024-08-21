@@ -1,4 +1,9 @@
-## **Installation**
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/cadam00/scoredec/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/scoredec/actions/workflows/R-CMD-check.yaml)
+  [![Codecov test coverage](https://codecov.io/gh/cadam00/scoredec/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/scoredec?branch=main)
+<!-- badges: end -->
+  
+# **Installation**
 
 You can install the development version of **scoredec** like so:
 
@@ -14,8 +19,7 @@ the traditional s-core algorithm. In particular, it is used for decomposing
 graph using the connections of the vertices. However, s-core is not restricted
 to only binary adjacency matrix like k-core algorithm (connected/not connected),
 but connectivity weights are utilized. A clear R implementation of the algorithm
-is done on **brainGraph** R package
-([Watson, 2024](#ref-brainGraph))
+is done on **brainGraph** R package ([Watson, 2024](#ref-brainGraph)).
 
 An expression of the flow chart for this s-core the algorithm is shown on Fig.
 <a href="#ref-Figure1">1</a>. Note that the implementation of the **scoredec**
