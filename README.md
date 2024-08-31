@@ -27,14 +27,16 @@ An expression of the flow chart for this s-core algorithm is shown on Fig.
 package is has some minor but significant differences, allowing it to be much
 more time and memory efficient.
 
-```{r Figure1, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig1.png")
-```
+<p align="center">
+  <img src="man/figures/fig1.png" width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure1"></span>Fig. 1: s-core algorithm flowchart
 </p>
 
-# **Example undirected graph**
+# **Example applications**
+
+## **Example undirected graph**
 
 ```r
 # Import libraries
@@ -72,9 +74,9 @@ plot(g,
      )
 ```
 
-```{r Figure2, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig2.png")
-```
+<p align="center">
+  <img src="man/figures/fig2.png" width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure2"></span>Fig. 2: Example undirected graph with connectivity
 lines sized by their weights.
@@ -104,9 +106,9 @@ plot(g,
      vertex.size = s_core_result * 10
      )
 ```
-```{r Figure3, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig3.png")
-```
+<p align="center">
+  <img src="man/figures/fig3.png" width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure3"></span>Fig. 3: Example undirected graph with vertices
 sized by their s-coreness
@@ -134,7 +136,7 @@ Therefore, for efficiency reasons, choosing `mode = "in"` or `mode = "out"` is
 preferred, as long as the sum of adjacency matrix with its transpose for
 transforming it to undirected is not needed.
 
-# **Example directed graph**
+## **Example directed graph**
 
 ```r
 # Create a dummy directed graph
@@ -167,9 +169,9 @@ plot(g,
      edge.curved = rep(0.4, ecount(g)) # make directions more visible
      )
 ```
-```{r Figure4, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig4.png")
-```
+<p align="center">
+  <img src="man/figures/fig4.png" width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure4"></span>Fig. 4: Example directed graph with connectivity
 lines per direction sized by their weights.
@@ -203,9 +205,9 @@ plot(g,
      )
 ```
 
-```{r Figure5, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig5.png")
-```
+<p align="center">
+  <img src="man/figures/fig5.png" width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure5"></span>Fig. 5: Total degree s-coreness.
 </p>
@@ -229,9 +231,9 @@ plot(g,
      vertex.size = in_s_core * 10
      )
 ```
-```{r Figure6, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig6.png")
-```
+<p align="center">
+  <img src="man/figures/fig6.png" width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure6"></span>Fig. 6: Total degree s-coreness.
 </p>
@@ -257,15 +259,15 @@ plot(g,
      vertex.size = out_s_core * 10
      )
 ```
-```{r Figure7, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig7.png")
-```
+<p align="center">
+  <img src="man/figures/fig7.png" width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure7"></span>Fig. 7: Total degree s-coreness.
 </p>
 
 
-## **References**
+# **References**
 
 Csárdi, Gábor, and Tamás Nepusz. 2006.
 “<span class="nocase" id="ref-csardi2006igraph">The igraph

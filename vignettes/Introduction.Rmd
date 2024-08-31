@@ -43,7 +43,9 @@ knitr::include_graphics("fig1.png")
 <span id="ref-Figure1"></span>Fig. 1: s-core algorithm flowchart
 </p>
 
-# **Example undirected graph**
+# **Example applications**
+
+## **Example undirected graph**
 
 ```r
 # Import libraries
@@ -143,7 +145,7 @@ Therefore, for efficiency reasons, choosing `mode = "in"` or `mode = "out"` is
 preferred, as long as the sum of adjacency matrix with its transpose for
 transforming it to undirected is not needed.
 
-# **Example directed graph**
+## **Example directed graph**
 
 ```r
 # Create a dummy directed graph
@@ -274,7 +276,7 @@ knitr::include_graphics("fig7.png")
 </p>
 
 
-## **References**
+# **References**
 
 Csárdi, Gábor, and Tamás Nepusz. 2006.
 “<span class="nocase" id="ref-csardi2006igraph">The igraph
