@@ -235,7 +235,7 @@ plot(g,
   <img src="man/figures/fig6.png" width="50%" />
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure6"></span>Fig. 6: Total degree s-coreness.
+<span id="ref-Figure6"></span>Fig. 6: In-degree s-coreness.
 </p>
 
 
@@ -263,7 +263,7 @@ plot(g,
   <img src="man/figures/fig7.png" width="50%" />
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure7"></span>Fig. 7: Total degree s-coreness.
+<span id="ref-Figure7"></span>Fig. 7: Out-degree s-coreness.
 </p>
 
 
