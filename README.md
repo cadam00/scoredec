@@ -280,9 +280,9 @@ Zanini, Daniel Noom, and Kirill Müller. (2024)
 igraph: Network Analysis and Visualization in
 R</span>”. [https://doi.org/10.5281/zenodo.7682609](https://doi.org/10.5281/zenodo.7682609).
 
-Eidsaa, M. and Almaas, E. (2013) *<span class="nocase" id="ref-eidsaa2013s">
+Eidsaa, M. and Almaas, E. (2013) <span class="nocase" id="ref-eidsaa2013s">
 “s-core network decomposition: A generalization of k-core analysis to weighted
-networks”</span>*, <em>Phys. Rev. E.</em>, American Physical Society, <b>88</b>,
+networks”</span>, <em>Phys. Rev. E.</em>, American Physical Society, <b>88</b>,
 062819.
 [https://doi.org/10.1103/PhysRevE.88.062819](https://doi.org/10.1103/PhysRevE.88.062819).
 
