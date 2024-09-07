@@ -269,23 +269,23 @@ plot(g,
 
 # **References**
 
-Csárdi, Gábor, and Tamás Nepusz. 2006.
+Csárdi, Gábor, and Tamás Nepusz. (2006)
 “<span class="nocase" id="ref-csardi2006igraph">The igraph
 software package for complex network research</span>.” *InterJournal*
 Complex Systems: 1695. [https://igraph.org](https://igraph.org).
 
 Csárdi, Gábor, Tamás Nepusz, Vincent Traag, Szabolcs Horvát, Fabio
-Zanini, Daniel Noom, and Kirill Müller. 2024.
-*<span class="nocase" id="ref-igraph">
+Zanini, Daniel Noom, and Kirill Müller. (2024)
+“<span class="nocase" id="ref-igraph">
 igraph: Network Analysis and Visualization in
-R</span>*. [https://doi.org/10.5281/zenodo.7682609](https://doi.org/10.5281/zenodo.7682609).
+R</span>”. [https://doi.org/10.5281/zenodo.7682609](https://doi.org/10.5281/zenodo.7682609).
 
 Eidsaa, M. and Almaas, E. (2013) <span class="nocase" id="ref-eidsaa2013s">
-‘s-core network decomposition: A generalization of k-core analysis to weighted
-networks’</span>, <em>Phys. Rev. E.</em>, American Physical Society, <b>88</b>,
+“s-core network decomposition: A generalization of k-core analysis to weighted
+networks”</span>, <em>Phys. Rev. E.</em>, American Physical Society, <b>88</b>,
 062819.
 [https://doi.org/10.1103/PhysRevE.88.062819](https://doi.org/10.1103/PhysRevE.88.062819).
 
-Watson, C.G. (2024). *<span class="nocase" id="ref-brainGraph">brainGraph: Graph
-Theory Analysis of Brain MRI Data</span>*. R package version 3.1.0.
+Watson, C.G. (2024). <span class="nocase" id="ref-brainGraph">“brainGraph: Graph
+Theory Analysis of Brain MRI Data</span>”. R package version 3.1.0.
 [https://doi.org/10.32614/CRAN.package.brainGraph](https://doi.org/10.32614/CRAN.package.brainGraph).
