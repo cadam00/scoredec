@@ -18,7 +18,7 @@ remotes::install_github("cadam00/scoredec")
 
 To cite the latest development version, please use:
 
-> Adam, C. (2024). scoredec: S-Core Graph Decomposition (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.13743048
+> Adam, C. (2024). scoredec: S-Core Graph Decomposition (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.13743047
 
 
 # **s-core algorithm**
