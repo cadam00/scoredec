@@ -2,6 +2,7 @@
 [![](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://CRAN.R-project.org/package=scoredec)
 [![R-CMD-check](https://github.com/cadam00/scoredec/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/scoredec/actions/workflows/R-CMD-check.yaml)
   [![Codecov test coverage](https://codecov.io/gh/cadam00/scoredec/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/scoredec?branch=main)
+  [![DOI](https://zenodo.org/badge/840736839.svg)](https://zenodo.org/doi/10.5281/zenodo.13743047)
 <!-- badges: end -->
   
 # **Installation**
@@ -12,6 +13,13 @@ You can install the development version of **scoredec** like so:
 if (!require(remotes)) install.packages("remotes")
 remotes::install_github("cadam00/scoredec")
 ```
+
+# **Citation**
+
+To cite the latest development version, please use:
+
+> Adam, C. (2024). scoredec: S-Core Graph Decomposition (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.13743048
+
 
 # **s-core algorithm**
 
