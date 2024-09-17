@@ -36,9 +36,11 @@ An expression of the flow chart for this s-core algorithm is shown on Fig.
 package is has some minor but significant differences, allowing it to be much
 more time and memory efficient.
 
-```{r Figure1, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig1.png")
-```
+<p align="center">
+  <img src="fig1.png"
+  alt="Fig. 1: s-core algorithm flowchart."
+  width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure1"></span>Fig. 1: s-core algorithm flowchart
 </p>
@@ -83,9 +85,11 @@ plot(g,
      )
 ```
 
-```{r Figure2, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig2.png")
-```
+<p align="center">
+  <img src="fig2.png"
+  alt="Fig. 2: Example undirected graph with connectivity"
+  width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure2"></span>Fig. 2: Example undirected graph with connectivity
 lines sized by their weights.
@@ -115,9 +119,11 @@ plot(g,
      vertex.size = s_core_result * 10
      )
 ```
-```{r Figure3, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig3.png")
-```
+<p align="center">
+  <img src="fig3.png"
+  alt="Fig. 3: Example undirected graph with vertices sized by their s-coreness"
+  width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure3"></span>Fig. 3: Example undirected graph with vertices
 sized by their s-coreness
@@ -178,9 +184,12 @@ plot(g,
      edge.curved = rep(0.4, ecount(g)) # make directions more visible
      )
 ```
-```{r Figure4, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig4.png")
-```
+<p align="center">
+  <img src="fig4.png"
+  alt="Fig. 4: Example directed graph with connectivity
+lines per direction sized by their weights."
+  width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure4"></span>Fig. 4: Example directed graph with connectivity
 lines per direction sized by their weights.
@@ -214,9 +223,11 @@ plot(g,
      )
 ```
 
-```{r Figure5, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig5.png")
-```
+<p align="center">
+  <img src="fig5.png"
+  alt="Fig. 5: Total degree s-coreness."
+  width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure5"></span>Fig. 5: Total degree s-coreness.
 </p>
@@ -240,9 +251,11 @@ plot(g,
      vertex.size = in_s_core * 10
      )
 ```
-```{r Figure6, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig6.png")
-```
+<p align="center">
+  <img src="fig6.png"
+  alt="Fig. 6: In-degree s-coreness."
+  width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure6"></span>Fig. 6: In-degree s-coreness.
 </p>
@@ -268,9 +281,11 @@ plot(g,
      vertex.size = out_s_core * 10
      )
 ```
-```{r Figure7, eval=TRUE, echo=FALSE, out.width = '70%', fig.align = "center"}
-knitr::include_graphics("fig7.png")
-```
+<p align="center">
+  <img src="fig7.png"
+  alt="Fig. 7: Out-degree s-coreness."
+  width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="ref-Figure7"></span>Fig. 7: Out-degree s-coreness.
 </p>
@@ -278,7 +293,7 @@ knitr::include_graphics("fig7.png")
 
 # **References**
 
-Csárdi, Gábor, and Tamás Nepusz. 2006.
+Csárdi, Gábor, and Tamás Nepusz. (2006)
 “<span class="nocase" id="ref-csardi2006igraph">The igraph
 software package for complex network research</span>.” *InterJournal*
 Complex Systems: 1695. [https://igraph.org](https://igraph.org).
@@ -289,11 +304,11 @@ Zanini, Daniel Noom, and Kirill Müller. 2024.
 Visualization in R</span>*. [https://doi.org/10.5281/zenodo.7682609](https://doi.org/10.5281/zenodo.7682609).
 
 Eidsaa, M. and Almaas, E. (2013) <span class="nocase" id="ref-eidsaa2013s">
-‘s-core network decomposition: A generalization of k-core analysis to weighted
-networks’</span>, <em>Phys. Rev. E.</em>, American Physical Society, <b>88</b>,
+“s-core network decomposition: A generalization of k-core analysis to weighted
+networks”</span>, <em>Phys. Rev. E.</em>, American Physical Society, <b>88</b>,
 062819.
 [https://doi.org/10.1103/PhysRevE.88.062819](https://doi.org/10.1103/PhysRevE.88.062819).
 
-Watson, C.G. (2024). *<span class="nocase" id="ref-brainGraph">brainGraph: Graph
-Theory Analysis of Brain MRI Data</span>*. R package version 3.1.0.
+Watson, C.G. (2024). <span class="nocase" id="ref-brainGraph">“brainGraph: Graph
+Theory Analysis of Brain MRI Data</span>”. R package version 3.1.0.
 [https://doi.org/10.32614/CRAN.package.brainGraph](https://doi.org/10.32614/CRAN.package.brainGraph).

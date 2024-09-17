@@ -36,7 +36,9 @@ package is has some minor but significant differences, allowing it to be much
 more time and memory efficient.
 
 <p align="center">
-  <img src="man/figures/fig1.png" width="50%" />
+  <img src="man/figures/fig1.png"
+  alt="Fig. 1: s-core algorithm flowchart."
+  width="50%" />
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure1"></span>Fig. 1: s-core algorithm flowchart
@@ -83,7 +85,9 @@ plot(g,
 ```
 
 <p align="center">
-  <img src="man/figures/fig2.png" width="50%" />
+  <img src="man/figures/fig2.png"
+  alt="Fig. 2: Example undirected graph with connectivity"
+  width="50%" />
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure2"></span>Fig. 2: Example undirected graph with connectivity
@@ -115,7 +119,9 @@ plot(g,
      )
 ```
 <p align="center">
-  <img src="man/figures/fig3.png" width="50%" />
+  <img src="man/figures/fig3.png"
+  alt="Fig. 3: Example undirected graph with vertices sized by their s-coreness"
+  width="50%" />
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure3"></span>Fig. 3: Example undirected graph with vertices
@@ -178,7 +184,10 @@ plot(g,
      )
 ```
 <p align="center">
-  <img src="man/figures/fig4.png" width="50%" />
+  <img src="man/figures/fig4.png"
+  alt="Fig. 4: Example directed graph with connectivity
+lines per direction sized by their weights."
+  width="50%" />
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure4"></span>Fig. 4: Example directed graph with connectivity
@@ -214,7 +223,9 @@ plot(g,
 ```
 
 <p align="center">
-  <img src="man/figures/fig5.png" width="50%" />
+  <img src="man/figures/fig5.png"
+  alt="Fig. 5: Total degree s-coreness."
+  width="50%" />
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure5"></span>Fig. 5: Total degree s-coreness.
@@ -240,7 +251,9 @@ plot(g,
      )
 ```
 <p align="center">
-  <img src="man/figures/fig6.png" width="50%" />
+  <img src="man/figures/fig6.png"
+  alt="Fig. 6: In-degree s-coreness."
+  width="50%" />
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure6"></span>Fig. 6: In-degree s-coreness.
@@ -268,7 +281,9 @@ plot(g,
      )
 ```
 <p align="center">
-  <img src="man/figures/fig7.png" width="50%" />
+  <img src="man/figures/fig7.png"
+  alt="Fig. 7: Out-degree s-coreness."
+  width="50%" />
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure7"></span>Fig. 7: Out-degree s-coreness.
