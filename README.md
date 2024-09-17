@@ -1,5 +1,5 @@
 <!-- badges: start -->
-[![](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://CRAN.R-project.org/package=scoredec)
+[![CRAN version](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://CRAN.R-project.org/package=scoredec)
 [![R-CMD-check](https://github.com/cadam00/scoredec/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/scoredec/actions/workflows/R-CMD-check.yaml)
   [![Codecov test coverage](https://codecov.io/gh/cadam00/scoredec/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/scoredec?branch=main)
   [![DOI](https://zenodo.org/badge/840736839.svg)](https://zenodo.org/doi/10.5281/zenodo.13743047)

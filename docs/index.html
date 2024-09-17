@@ -70,7 +70,7 @@
 <p>s-core algorithm (<a href="#ref-eidsaa2013s">Eidsaa and Almaas, 2013</a>) is a variation of the traditional k-core algorithm. In particular, it is used for decomposing graph using the connections of the vertices. However, s-core is not restricted to only binary adjacency matrix like k-core algorithm (connected/not connected), but connectivity weights are utilized. A clear R implementation of the algorithm is done on <strong>brainGraph</strong> R package (<a href="#ref-brainGraph">Watson, 2024</a>).</p>
 <p>An expression of the flow chart for this s-core algorithm is shown on Fig. <a href="#ref-Figure1">1</a>. Note that the implementation of the <strong>scoredec</strong> package is has some minor but significant differences, allowing it to be much more time and memory efficient.</p>
 <p align="center">
-<img src="reference/figures/fig1.png" width="50%"></p>
+<img src="reference/figures/fig1.png" alt="Fig. 1: s-core algorithm flowchart." width="50%"></p>
 <p class="caption" align="center">
 <span id="ref-Figure1"></span>Fig. 1: s-core algorithm flowchart
 </p>
@@ -112,7 +112,7 @@
 <span>     edge.width<span class="op">=</span><span class="fu"><a href="https://r.igraph.org/reference/E.html" class="external-link">E</a></span><span class="op">(</span><span class="va">g</span><span class="op">)</span><span class="op">$</span><span class="va">weight</span> <span class="op">*</span> <span class="fl">5</span> <span class="co"># make connection weight lines thicker</span></span>
 <span>     <span class="op">)</span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/fig2.png" width="50%"></p>
+<img src="reference/figures/fig2.png" alt="Fig. 2: Example undirected graph with connectivity" width="50%"></p>
 <p class="caption" align="center">
 <span id="ref-Figure2"></span>Fig. 2: Example undirected graph with connectivity lines sized by their weights.
 </p>
@@ -132,7 +132,7 @@
 <span>     vertex.size <span class="op">=</span> <span class="va">s_core_result</span> <span class="op">*</span> <span class="fl">10</span></span>
 <span>     <span class="op">)</span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/fig3.png" width="50%"></p>
+<img src="reference/figures/fig3.png" alt="Fig. 3: Example undirected graph with vertices sized by their s-coreness" width="50%"></p>
 <p class="caption" align="center">
 <span id="ref-Figure3"></span>Fig. 3: Example undirected graph with vertices sized by their s-coreness
 </p>
@@ -174,7 +174,8 @@
 <span>     edge.curved <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fl">0.4</span>, <span class="fu"><a href="https://r.igraph.org/reference/gsize.html" class="external-link">ecount</a></span><span class="op">(</span><span class="va">g</span><span class="op">)</span><span class="op">)</span> <span class="co"># make directions more visible</span></span>
 <span>     <span class="op">)</span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/fig4.png" width="50%"></p>
+<img src="reference/figures/fig4.png" alt="Fig. 4: Example directed graph with connectivity
+lines per direction sized by their weights." width="50%"></p>
 <p class="caption" align="center">
 <span id="ref-Figure4"></span>Fig. 4: Example directed graph with connectivity lines per direction sized by their weights.
 </p>
@@ -194,7 +195,7 @@
 <span>     vertex.size <span class="op">=</span> <span class="va">all_s_core</span> <span class="op">*</span> <span class="fl">10</span></span>
 <span>     <span class="op">)</span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/fig5.png" width="50%"></p>
+<img src="reference/figures/fig5.png" alt="Fig. 5: Total degree s-coreness." width="50%"></p>
 <p class="caption" align="center">
 <span id="ref-Figure5"></span>Fig. 5: Total degree s-coreness.
 </p>
@@ -213,7 +214,7 @@
 <span>     vertex.size <span class="op">=</span> <span class="va">in_s_core</span> <span class="op">*</span> <span class="fl">10</span></span>
 <span>     <span class="op">)</span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/fig6.png" width="50%"></p>
+<img src="reference/figures/fig6.png" alt="Fig. 6: In-degree s-coreness." width="50%"></p>
 <p class="caption" align="center">
 <span id="ref-Figure6"></span>Fig. 6: In-degree s-coreness.
 </p>
@@ -233,7 +234,7 @@
 <span>     vertex.size <span class="op">=</span> <span class="va">out_s_core</span> <span class="op">*</span> <span class="fl">10</span></span>
 <span>     <span class="op">)</span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/fig7.png" width="50%"></p>
+<img src="reference/figures/fig7.png" alt="Fig. 7: Out-degree s-coreness." width="50%"></p>
 <p class="caption" align="center">
 <span id="ref-Figure7"></span>Fig. 7: Out-degree s-coreness.
 </p>
@@ -282,7 +283,7 @@
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://CRAN.R-project.org/package=scoredec" class="external-link"><img src="https://img.shields.io/badge/devel%20version-0.1.0-blue.svg"></a></li>
+<li><a href="https://CRAN.R-project.org/package=scoredec" class="external-link"><img src="https://img.shields.io/badge/devel%20version-0.1.0-blue.svg" alt="CRAN version"></a></li>
 <li><a href="https://github.com/cadam00/scoredec/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/cadam00/scoredec/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://app.codecov.io/gh/cadam00/scoredec?branch=main" class="external-link"><img src="https://codecov.io/gh/cadam00/scoredec/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://zenodo.org/doi/10.5281/zenodo.13743047" class="external-link"><img src="https://zenodo.org/badge/840736839.svg" alt="DOI"></a></li>
