@@ -12,7 +12,7 @@ Description: S-Core Graph Decomposition algorithm for graphs. This is a method
 License: GPL (>= 2)
 LinkingTo: Rcpp
 Encoding: UTF-8
-URL: https://github.com/cadam00/scoredec
+URL: https://github.com/cadam00/scoredec, https://cadam00.github.io/scoredec/
 BugReports: https://github.com/cadam00/scoredec/issues
 Imports: Rcpp (>= 1.0.12), Rfast, igraph
 Suggests: 
