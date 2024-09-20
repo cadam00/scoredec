@@ -56,26 +56,26 @@ R package version 3.1.0. \doi{10.32614/CRAN.package.brainGraph}.
 \examples{
 set.seed(42)
 
-# Create a dummy symmetric adjacency matrix
+## Create a dummy symmetric adjacency matrix
 n <- 5
 W <- matrix(runif(n^2),n)
 W[lower.tri(W)] = t(W)[lower.tri(W)]
 diag(W) <- 0
 
 print(scoredec::s_coreness(g = NULL, W = W, mode = "all"))
-## [1] 3 1 2 4 4
+#> [1] 3 1 2 4 4
 
 base::isSymmetric(W)
-## [1] TRUE
+#> [1] TRUE
 
 all.equal(scoredec::s_coreness(g = NULL, W = W, mode = "all"),
 scoredec::s_coreness(g = NULL, W = W, mode = "in"))
-## [1] TRUE
+#> [1] TRUE
 
 # Create a dummy undirected graph
 g <- igraph::graph_from_adjacency_matrix(adjmatrix = W,
                                          mode      = "undirected",
                                          weighted  = TRUE)
 print(scoredec::s_coreness(g = g, W = NULL, mode = "all"))
-## [1] 3 1 2 4 4
+#> [1] 3 1 2 4 4
 }
