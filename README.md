@@ -1,5 +1,6 @@
 <!-- badges: start -->
-[![Developmental version](https://img.shields.io/badge/devel%20version-0.1.0-blue.svg)](https://github.com/cadam00/scoredec)
+[![CRAN status](https://www.r-pkg.org/badges/version/scoredec)](https://CRAN.R-project.org/package=scoredec)
+[![Developmental version](https://img.shields.io/badge/devel%20version-0.1.1-blue.svg)](https://github.com/cadam00/scoredec)
 [![R-CMD-check](https://github.com/cadam00/scoredec/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/scoredec/actions/workflows/R-CMD-check.yaml)
   [![Codecov test coverage](https://codecov.io/gh/cadam00/scoredec/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/scoredec?branch=main)
   [![DOI](https://zenodo.org/badge/840736839.svg)](https://zenodo.org/doi/10.5281/zenodo.13743047)
@@ -7,8 +8,13 @@
   
 # **Installation**
 
-You can install the development version of **scoredec** like so:
+You can install the [(CRAN)](https://cran.r-project.org/) version of
+**scoredec** like so:
+``` r
+install.packages("scoredec")
+```
 
+Alternatively, you can install the development version of **scoredec** using:
 ``` r
 if (!require(remotes)) install.packages("remotes")
 remotes::install_github("cadam00/scoredec")
@@ -16,9 +22,15 @@ remotes::install_github("cadam00/scoredec")
 
 # **Citation**
 
-To cite the latest development version, please use:
+To cite the official [(CRAN)](https://cran.r-project.org/) version, please use:
 
-> Adam, C. (2024). scoredec: S-Core Graph Decomposition (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.13743047
+> Adam, C. (2024). corbouli: Corbae-Ouliaris Frequency Domain Filtering.
+R package version 0.1.0. Available at
+https://doi.org/10.32614/CRAN.package.scoredec.
+
+Alternatively, to cite the latest development version, please use:
+
+> Adam, C. (2024). scoredec: S-Core Graph Decomposition (v0.1.1). Zenodo. https://doi.org/10.5281/zenodo.13743047.
 
 
 # **s-core algorithm**

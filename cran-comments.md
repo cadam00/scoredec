@@ -1,4 +1,6 @@
-## Minor changes in Introduction.Rmd and README.md.
+## Minor changes.
+
+- Update README.md file.
 
 ## R CMD check results
 
