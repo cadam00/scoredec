@@ -60,9 +60,13 @@ Adam</h4>
     
     
 <div class="section level2">
-<h2 id="s-core-algorithm">
-<strong>s-core algorithm</strong><a class="anchor" aria-label="anchor" href="#s-core-algorithm"></a>
+<h2 id="introduction-to-scoredec">
+<strong>Introduction to scoredec</strong><a class="anchor" aria-label="anchor" href="#introduction-to-scoredec"></a>
 </h2>
+<div class="section level3">
+<h3 id="s-core-algorithm">
+<strong>s-core algorithm</strong><a class="anchor" aria-label="anchor" href="#s-core-algorithm"></a>
+</h3>
 <p>s-core algorithm (<a href="#ref-eidsaa2013s">Eidsaa and Almaas,
 2013</a>) is a variation of the traditional k-core algorithm. In
 particular, it is used for decomposing graph using the connections of
@@ -80,14 +84,14 @@ differences, allowing it to be much more time and memory efficient.</p>
 <span id="ref-Figure1"></span>Fig. 1: s-core algorithm flowchart
 </p>
 </div>
-<div class="section level2">
-<h2 id="example-applications">
-<strong>Example applications</strong><a class="anchor" aria-label="anchor" href="#example-applications"></a>
-</h2>
 <div class="section level3">
-<h3 id="example-undirected-graph">
-<strong>Example undirected graph</strong><a class="anchor" aria-label="anchor" href="#example-undirected-graph"></a>
+<h3 id="example-applications">
+<strong>Example applications</strong><a class="anchor" aria-label="anchor" href="#example-applications"></a>
 </h3>
+<div class="section level4">
+<h4 id="example-undirected-graph">
+<strong>Example undirected graph</strong><a class="anchor" aria-label="anchor" href="#example-undirected-graph"></a>
+</h4>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Import libraries</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/cadam00/scoredec" class="external-link">scoredec</a></span><span class="op">)</span></span>
@@ -163,10 +167,10 @@ or <code>mode = "out"</code> is preferred, as long as the sum of
 adjacency matrix with its transpose for transforming it to undirected is
 not needed.</p>
 </div>
-<div class="section level3">
-<h3 id="example-directed-graph">
+<div class="section level4">
+<h4 id="example-directed-graph">
 <strong>Example directed graph</strong><a class="anchor" aria-label="anchor" href="#example-directed-graph"></a>
-</h3>
+</h4>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Create a dummy directed graph</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">42</span><span class="op">)</span></span>
@@ -261,6 +265,7 @@ in the same way as well.</p>
 <p class="caption" align="center">
 <span id="ref-Figure7"></span>Fig. 7: Out-degree s-coreness.
 </p>
+</div>
 </div>
 </div>
 <div class="section level2">
