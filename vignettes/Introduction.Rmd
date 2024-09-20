@@ -22,7 +22,9 @@ vignette: >
 knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 ```
 
-# **s-core algorithm**
+# **Introduction to scoredec**
+
+## **s-core algorithm**
 
 s-core algorithm ([Eidsaa and Almaas, 2013](#ref-eidsaa2013s)) is a variation of
 the traditional k-core algorithm. In particular, it is used for decomposing
@@ -45,9 +47,9 @@ more time and memory efficient.
 <span id="ref-Figure1"></span>Fig. 1: s-core algorithm flowchart
 </p>
 
-# **Example applications**
+## **Example applications**
 
-## **Example undirected graph**
+### **Example undirected graph**
 
 ```r
 # Import libraries
@@ -151,7 +153,7 @@ Therefore, for efficiency reasons, choosing `mode = "in"` or `mode = "out"` is
 preferred, as long as the sum of adjacency matrix with its transpose for
 transforming it to undirected is not needed.
 
-## **Example directed graph**
+### **Example directed graph**
 
 ```r
 # Create a dummy directed graph

@@ -5,8 +5,10 @@
   [![Codecov test coverage](https://codecov.io/gh/cadam00/scoredec/branch/main/graph/badge.svg)](https://app.codecov.io/gh/cadam00/scoredec?branch=main)
   [![DOI](https://zenodo.org/badge/840736839.svg)](https://zenodo.org/doi/10.5281/zenodo.13743047)
 <!-- badges: end -->
-  
-# **Installation**
+
+# **Introduction to scoredec**
+
+## **Installation**
 
 You can install the [(CRAN)](https://cran.r-project.org/) version of
 **scoredec** like so:
@@ -20,7 +22,7 @@ if (!require(remotes)) install.packages("remotes")
 remotes::install_github("cadam00/scoredec")
 ```
 
-# **Citation**
+## **Citation**
 
 To cite the official [(CRAN)](https://cran.r-project.org/) version, please use:
 
@@ -33,7 +35,7 @@ Alternatively, to cite the latest development version, please use:
 > Adam, C. (2024). scoredec: S-Core Graph Decomposition (v0.1.1). Zenodo. https://doi.org/10.5281/zenodo.13743047.
 
 
-# **s-core algorithm**
+## **s-core algorithm**
 
 s-core algorithm ([Eidsaa and Almaas, 2013](#ref-eidsaa2013s)) is a variation of
 the traditional k-core algorithm. In particular, it is used for decomposing
@@ -56,9 +58,9 @@ more time and memory efficient.
 <span id="ref-Figure1"></span>Fig. 1: s-core algorithm flowchart
 </p>
 
-# **Example applications**
+## **Example applications**
 
-## **Example undirected graph**
+### **Example undirected graph**
 
 ```r
 # Import libraries
@@ -162,7 +164,7 @@ Therefore, for efficiency reasons, choosing `mode = "in"` or `mode = "out"` is
 preferred, as long as the sum of adjacency matrix with its transpose for
 transforming it to undirected is not needed.
 
-## **Example directed graph**
+### **Example directed graph**
 
 ```r
 # Create a dummy directed graph
