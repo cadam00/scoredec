@@ -293,7 +293,7 @@ plot(g,
 </p>
 
 
-# **References**
+## **References**
 
 Csárdi, Gábor, and Tamás Nepusz. (2006)
 “<span class="nocase" id="ref-csardi2006igraph">The igraph
