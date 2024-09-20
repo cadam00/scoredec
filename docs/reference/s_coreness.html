@@ -100,16 +100,13 @@ R package version 3.1.0. <a href="https://doi.org/10.32614/CRAN.package.brainGra
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">scoredec</span><span class="fu">::</span><span class="fu">s_coreness</span><span class="op">(</span>g <span class="op">=</span> <span class="cn">NULL</span>, W <span class="op">=</span> <span class="va">W</span>, mode <span class="op">=</span> <span class="st">"all"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 3 2 1 4 4</span>
-<span class="r-in"><span><span class="co">#&gt; [1] 3 1 2 4 4</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">base</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/base/isSymmetric.html" class="external-link">isSymmetric</a></span><span class="op">(</span><span class="va">W</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] TRUE</span>
-<span class="r-in"><span><span class="co">#&gt; [1] TRUE</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/all.equal.html" class="external-link">all.equal</a></span><span class="op">(</span><span class="fu">scoredec</span><span class="fu">::</span><span class="fu">s_coreness</span><span class="op">(</span>g <span class="op">=</span> <span class="cn">NULL</span>, W <span class="op">=</span> <span class="va">W</span>, mode <span class="op">=</span> <span class="st">"all"</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span><span class="fu">scoredec</span><span class="fu">::</span><span class="fu">s_coreness</span><span class="op">(</span>g <span class="op">=</span> <span class="cn">NULL</span>, W <span class="op">=</span> <span class="va">W</span>, mode <span class="op">=</span> <span class="st">"in"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] TRUE</span>
-<span class="r-in"><span><span class="co">#&gt; [1] TRUE</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Create a dummy undirected graph</span></span></span>
 <span class="r-in"><span><span class="va">g</span> <span class="op">&lt;-</span> <span class="fu">igraph</span><span class="fu">::</span><span class="fu"><a href="https://r.igraph.org/reference/graph_from_adjacency_matrix.html" class="external-link">graph_from_adjacency_matrix</a></span><span class="op">(</span>adjmatrix <span class="op">=</span> <span class="va">W</span>,</span></span>
@@ -117,7 +114,6 @@ R package version 3.1.0. <a href="https://doi.org/10.32614/CRAN.package.brainGra
 <span class="r-in"><span>                                         weighted  <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">scoredec</span><span class="fu">::</span><span class="fu">s_coreness</span><span class="op">(</span>g <span class="op">=</span> <span class="va">g</span>, W <span class="op">=</span> <span class="cn">NULL</span>, mode <span class="op">=</span> <span class="st">"all"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 3 2 1 4 4</span>
-<span class="r-in"><span><span class="co">#&gt; [1] 3 1 2 4 4</span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
