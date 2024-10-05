@@ -44,7 +44,7 @@ more time and memory efficient.
   width="50%" />
 </p>
 <p class="caption" align="center">
-<span id="ref-Figure1"></span>Fig. 1: s-core algorithm flowchart
+<span id="ref-Figure1"></span>Fig. 1: s-core algorithm flowchart.
 </p>
 
 ## **Example applications**
