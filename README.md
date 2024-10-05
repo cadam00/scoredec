@@ -139,7 +139,7 @@ plot(g,
 </p>
 <p class="caption" align="center">
 <span id="ref-Figure3"></span>Fig. 3: Example undirected graph with vertices
-sized by their s-coreness
+sized by their s-coreness.
 </p>
 
 It is shown on Fig. <a href="#ref-Figure3">3</a> that vertices 1 and 4 have
