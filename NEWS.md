@@ -2,7 +2,7 @@
 
 ## Minor changes
 
-- Update README.md file.
+- Update README.md and Introduction.Rmd.
 
 - Update s_coreness.Rd example comments.
 
