@@ -1,6 +1,10 @@
-## Minor changes.
+# scoredec 0.1.1
 
-- Update README.md file.
+## Minor changes
+
+- Update README.md and Introduction.Rmd.
+
+- Update s_coreness.Rd example comments.
 
 ## R CMD check results
 
