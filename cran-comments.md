@@ -1,3 +1,9 @@
+# scoredec 0.1.2
+
+## Minor changes
+
+- Update DESCRIPTION.
+
 # scoredec 0.1.1
 
 ## Minor changes
