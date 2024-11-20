@@ -27,12 +27,14 @@ remotes::install_github("cadam00/scoredec")
 To cite the official [(CRAN)](https://cran.r-project.org/) version, please use:
 
 > Adam, C. (2024). scoredec: S-Core Graph Decomposition.
-R package version 0.1.2. Available at
+R package version 0.1.
+. Available at
 https://doi.org/10.32614/CRAN.package.scoredec.
 
 Alternatively, to cite the latest development version, please use:
 
-> Adam, C. (2024). scoredec: S-Core Graph Decomposition (v0.1.2). Zenodo. https://doi.org/10.5281/zenodo.13743047.
+> Adam, C. (2024). scoredec: S-Core Graph Decomposition (v0.1.2). Zenodo.
+https://doi.org/10.5281/zenodo.13743047.
 
 
 ## **s-core algorithm**
